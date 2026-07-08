@@ -68,10 +68,10 @@ The models are evaluated using:
 ```
 Linear-Regression/
 │
-├── Simple-Linear-Regression.ipynb
-├── Multiple-Linear-Regression.ipynb
-├── Student-Marks-Prediction.ipynb
-├── House-Price-Prediction.ipynb
+├── Simple-Linear-Regression.py
+├── Multiple-Linear-Regression.py
+├── Student-Marks-Prediction.py
+├── House-Price-Prediction.py
 └── README.md
 ```
 
