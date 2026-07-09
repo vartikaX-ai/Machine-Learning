@@ -4,7 +4,7 @@
 
 This repository contains my implementations and practice projects on **Linear Regression** using **Python** and **Scikit-learn**.
 
-The goal of this repository is to understand the complete Linear Regression workflow, including data preprocessing, model training, prediction, visualization, and evaluation using real-world datasets.
+The objective of this repository is to understand the complete Linear Regression workflow, including data preprocessing, feature engineering, model training, regularization, prediction, and evaluation using real-world datasets.
 
 ---
 
@@ -13,16 +13,20 @@ The goal of this repository is to understand the complete Linear Regression work
 - Introduction to Linear Regression
 - Simple Linear Regression
 - Multiple Linear Regression
+- Ridge Regression (L2 Regularization)
+- Lasso Regression (L1 Regularization)
 - Data Preprocessing
 - Handling Missing Values
+- One-Hot Encoding
 - Feature Scaling (StandardScaler)
-- Label Encoding
 - Correlation Analysis
 - Outlier Detection
 - Train-Test Split
 - Model Training
 - Prediction
 - Model Evaluation
+- Regularization
+- Model Comparison
 
 ---
 
@@ -74,7 +78,7 @@ The models are evaluated using the following regression metrics:
 - Air Conditioning
 - Preferred Area
 - Furnishing Status
-- and other housing features
+- and other housing-related features.
 
 **Concepts Practiced**
 - Data Preprocessing
@@ -87,6 +91,32 @@ The models are evaluated using the following regression metrics:
 
 ---
 
+### 3. Job Salary Prediction using Ridge & Lasso Regression
+
+**Objective**
+- Predict employee salaries using job-related features and compare the performance of Ridge and Lasso Regression.
+
+**Features Used**
+- Job Title
+- Education Level
+- Industry
+- Company Size
+- Location
+- Remote Work
+- Years of Experience
+- and other salary-related features.
+
+**Concepts Practiced**
+- One-Hot Encoding
+- Feature Scaling
+- Ridge Regression
+- Lasso Regression
+- Regularization
+- Model Evaluation
+- Model Comparison
+
+---
+
 ## Repository Structure
 
 ```
@@ -94,11 +124,13 @@ Linear-Regression/
 │
 ├── datasets/
 │   ├── Housing.csv
-│   └── Student_Marks.csv
+│   ├── Student_Marks.csv
+│   └── job_salary_prediction_dataset.csv
 │
 ├── projects/
+│   ├── Student_Marks_Prediction.py
 │   ├── House_Price_Prediction.py
-│   └── Student_Marks_Prediction.py
+│   └── Job_Salary_Prediction_Ridge_Lasso.py
 │
 ├── README.md
 └── requirements.txt
@@ -145,13 +177,16 @@ Through these implementations, I learned:
 
 - When to use Linear Regression
 - Difference between Simple and Multiple Linear Regression
+- Understanding overfitting and regularization
+- Difference between Ridge and Lasso Regression
+- One-Hot Encoding
 - Data preprocessing techniques
 - Feature scaling
-- Label encoding
 - Correlation analysis
 - Detecting outliers
 - Training regression models
 - Making predictions
+- Comparing regression models
 - Evaluating regression models using different metrics
 - Interpreting model performance
 
@@ -162,10 +197,13 @@ Through these implementations, I learned:
 In the future, this repository will be expanded with:
 
 - Polynomial Regression
-- Ridge Regression
-- Lasso Regression
 - Elastic Net Regression
-- Hyperparameter Tuning
 - Cross Validation
+- Hyperparameter Tuning
+- Larger real-world regression projects
 
-This repository is part of my Machine Learning learning journey, where I implement algorithms using Python and Scikit-learn while building practical projects to strengthen my understanding.
+---
+
+## About This Repository
+
+This repository is part of my **Machine Learning learning journey**, where I implement machine learning algorithms from scratch using **Python** and **Scikit-learn**, solve practical problems, and build projects to strengthen both my theoretical understanding and coding skills.
