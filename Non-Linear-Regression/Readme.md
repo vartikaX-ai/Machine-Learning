@@ -2,23 +2,23 @@
 
 ## About this Repository
 
-This repository contains my implementations and projects on **Non-Linear Regression** algorithms using **Python** and **Scikit-learn**.
+This repository contains my implementations and practical projects on **Non-Linear Regression** algorithms using **Python** and **Scikit-learn**.
 
-The goal of this repository is to understand how different regression algorithms model complex, non-linear relationships while following a complete machine learning workflow including data preprocessing, feature engineering, model training, prediction, evaluation, and model comparison.
+The objective of this repository is to understand how different non-linear regression algorithms model complex relationships between features and target variables through practical implementation, experimentation, and model evaluation.
 
 ---
 
 ## Algorithms Covered
 
-- ✅ Polynomial Regression
+- Polynomial Regression
 
 ---
 
 ## Topics Covered
 
-- Non-Linear Regression
-- Feature Engineering
+- Polynomial Regression
 - Polynomial Features
+- Feature Engineering
 - One-Hot Encoding
 - Feature Scaling
 - Correlation Analysis
@@ -44,14 +44,12 @@ The models are evaluated using:
 
 ## Projects
 
-### Polynomial Regression
-
-#### Car Price Prediction
+### 1. Car Price Prediction using Polynomial Regression
 
 **Objective**
 
 - Predict car prices using Polynomial Regression.
-- Compare Linear Regression and Polynomial Regression.
+- Compare the performance of Polynomial Regression with Linear Regression.
 
 **Dataset**
 
@@ -68,18 +66,31 @@ The models are evaluated using:
 - Model Evaluation
 - Model Comparison
 
-**Key Learning**
+---
 
-Polynomial Regression generated a large number of polynomial and interaction features, leading to overfitting on this dataset. Linear Regression achieved better generalization performance, demonstrating that a more complex model is not always the better choice.
+## Key Learning
+
+During experimentation, Polynomial Regression did not outperform Linear Regression on the Car Price dataset.
+
+Generating polynomial and interaction features significantly increased the number of input features, resulting in overfitting and poorer generalization.
+
+This project demonstrates an important machine learning principle:
+
+> **A more complex model does not always produce better results. Choosing the appropriate model depends on the characteristics of the dataset.**
 
 ---
 
 ## Repository Structure
 
-```
+```text
 Non-Linear-Regression/
-│── datasets/
-│── projects/
+│
+├── datasets/
+│   └── CarPrice_Assignment.csv
+│
+├── projects/
+│   └── Car_Price_Prediction.py
+│
 ├── README.md
 └── requirements.txt
 ```
@@ -121,22 +132,24 @@ pip install -r requirements.txt
 
 ## Learning Outcomes
 
-Through these implementations, I learned:
+Through this project, I learned:
 
-- When to use Non-Linear Regression
+- When to use Polynomial Regression
 - Creating Polynomial Features
 - Feature Engineering
-- Handling Categorical Variables
+- One-Hot Encoding
 - Feature Scaling
+- Data Preprocessing
+- Correlation Analysis
+- Detecting Outliers
 - Training Regression Models
-- Comparing Multiple Regression Algorithms
-- Evaluating Model Performance
-- Understanding Overfitting
-- Selecting an appropriate model based on the dataset
+- Comparing Linear and Polynomial Regression
+- Evaluating Regression Models using multiple metrics
+- Understanding overfitting caused by high-dimensional feature expansion
+- Selecting the appropriate model based on the dataset
 
 ---
 
 ## About This Repository
 
-This repository is part of my **Machine Learning learning journey**, where I implement machine learning algorithms using **Python** and **Scikit-learn**, solve practical problems, and build projects to strengthen both my theoretical understanding and coding skills.
-This repository will be continuously updated with additional Non-Linear Regression algorithms, practical projects, and real-world datasets as I progress through my Machine Learning learning journey.
+This repository is part of my **Machine Learning learning journey**, where I implement machine learning algorithms using **Python** and **Scikit-learn**, solve practical problems, and build projects to strengthen both my theoretical understanding and practical coding skills.
