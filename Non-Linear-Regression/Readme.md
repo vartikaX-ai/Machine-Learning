@@ -11,10 +11,6 @@ The goal of this repository is to understand how different regression algorithms
 ## Algorithms Covered
 
 - ✅ Polynomial Regression
-- ⏳ Decision Tree Regression
-- ⏳ Random Forest Regression
-- ⏳ Support Vector Regression (SVR)
-- ⏳ XGBoost Regression
 
 ---
 
@@ -82,13 +78,8 @@ Polynomial Regression generated a large number of polynomial and interaction fea
 
 ```
 Non-Linear-Regression/
-│
-├── Polynomial-Regression/
-│   ├── datasets/
-│   ├── projects/
-│   ├── README.md
-│   └── requirements.txt
-│
+│── datasets/
+│── projects/
 ├── README.md
 └── requirements.txt
 ```
@@ -145,6 +136,7 @@ Through these implementations, I learned:
 
 ---
 
-## Future Improvements
+## About This Repository
 
+This repository is part of my **Machine Learning learning journey**, where I implement machine learning algorithms using **Python** and **Scikit-learn**, solve practical problems, and build projects to strengthen both my theoretical understanding and coding skills.
 This repository will be continuously updated with additional Non-Linear Regression algorithms, practical projects, and real-world datasets as I progress through my Machine Learning learning journey.
