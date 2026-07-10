@@ -14,7 +14,7 @@ The objective of this repository is to understand the complete workflow of linea
 - Multiple Linear Regression
 - Ridge Regression (L2 Regularization)
 - Lasso Regression (L1 Regularization)
-- Elastic Net Regression *(Coming Soon)*
+
 
 ---
 
