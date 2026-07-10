@@ -2,9 +2,19 @@
 
 ## About this Repository
 
-This repository contains my implementations and practice projects on **Linear Regression** using **Python** and **Scikit-learn**.
+This repository contains my implementations and practical projects on **Linear Regression** algorithms using **Python** and **Scikit-learn**.
 
-The objective of this repository is to understand the complete Linear Regression workflow, including data preprocessing, feature engineering, model training, regularization, prediction, and evaluation using real-world datasets.
+The objective of this repository is to understand the complete workflow of linear regression models, including data preprocessing, feature engineering, regularization, model training, prediction, evaluation, and comparison using real-world datasets.
+
+---
+
+## Algorithms Covered
+
+- Simple Linear Regression
+- Multiple Linear Regression
+- Ridge Regression (L2 Regularization)
+- Lasso Regression (L1 Regularization)
+- Elastic Net Regression *(Coming Soon)*
 
 ---
 
@@ -13,8 +23,8 @@ The objective of this repository is to understand the complete Linear Regression
 - Introduction to Linear Regression
 - Simple Linear Regression
 - Multiple Linear Regression
-- Ridge Regression (L2 Regularization)
-- Lasso Regression (L1 Regularization)
+- Ridge Regression
+- Lasso Regression
 - Data Preprocessing
 - Handling Missing Values
 - One-Hot Encoding
@@ -32,7 +42,7 @@ The objective of this repository is to understand the complete Linear Regression
 
 ## Evaluation Metrics
 
-The models are evaluated using the following regression metrics:
+The models are evaluated using:
 
 - R² Score
 - Mean Absolute Error (MAE)
@@ -46,13 +56,16 @@ The models are evaluated using the following regression metrics:
 ### 1. Student Marks Prediction
 
 **Objective**
-- Predict student marks based on study-related features.
+
+- Predict student marks using Linear Regression.
 
 **Features Used**
+
 - Number of Courses
 - Study Time
 
 **Concepts Practiced**
+
 - Multiple Linear Regression
 - Correlation Analysis
 - Train-Test Split
@@ -63,9 +76,11 @@ The models are evaluated using the following regression metrics:
 ### 2. House Price Prediction
 
 **Objective**
+
 - Predict house prices using multiple housing features.
 
 **Features Used**
+
 - Area
 - Bedrooms
 - Bathrooms
@@ -81,8 +96,9 @@ The models are evaluated using the following regression metrics:
 - and other housing-related features.
 
 **Concepts Practiced**
+
 - Data Preprocessing
-- Label Encoding
+- One-Hot Encoding
 - Feature Scaling
 - Correlation Analysis
 - Outlier Detection
@@ -94,9 +110,11 @@ The models are evaluated using the following regression metrics:
 ### 3. Job Salary Prediction using Ridge & Lasso Regression
 
 **Objective**
-- Predict employee salaries using job-related features and compare the performance of Ridge and Lasso Regression.
+
+- Predict employee salaries using job-related features and compare Ridge Regression and Lasso Regression.
 
 **Features Used**
+
 - Job Title
 - Education Level
 - Industry
@@ -107,19 +125,20 @@ The models are evaluated using the following regression metrics:
 - and other salary-related features.
 
 **Concepts Practiced**
+
 - One-Hot Encoding
 - Feature Scaling
 - Ridge Regression
 - Lasso Regression
 - Regularization
-- Model Evaluation
 - Model Comparison
+- Model Evaluation
 
 ---
 
 ## Repository Structure
 
-```
+```text
 Linear-Regression/
 │
 ├── datasets/
@@ -179,31 +198,31 @@ Through these implementations, I learned:
 - Difference between Simple and Multiple Linear Regression
 - Understanding overfitting and regularization
 - Difference between Ridge and Lasso Regression
-- One-Hot Encoding
+- Applying One-Hot Encoding
 - Data preprocessing techniques
-- Feature scaling
-- Correlation analysis
-- Detecting outliers
+- Feature Scaling
+- Correlation Analysis
+- Detecting Outliers
 - Training regression models
 - Making predictions
 - Comparing regression models
-- Evaluating regression models using different metrics
-- Interpreting model performance
+- Evaluating model performance using regression metrics
+- Interpreting regression results
 
 ---
 
 ## Future Improvements
 
-In the future, this repository will be expanded with:
+This repository will be expanded with:
 
-- Polynomial Regression
 - Elastic Net Regression
 - Cross Validation
 - Hyperparameter Tuning
+- Feature Selection
 - Larger real-world regression projects
 
 ---
 
 ## About This Repository
 
-This repository is part of my **Machine Learning learning journey**, where I implement machine learning algorithms from scratch using **Python** and **Scikit-learn**, solve practical problems, and build projects to strengthen both my theoretical understanding and coding skills.
+This repository is part of my **Machine Learning learning journey**, where I implement machine learning algorithms using **Python** and **Scikit-learn**, solve practical problems, and build projects to strengthen both my theoretical understanding and coding skills.
