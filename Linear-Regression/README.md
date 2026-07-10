@@ -211,18 +211,6 @@ Through these implementations, I learned:
 
 ---
 
-## Future Improvements
-
-This repository will be expanded with:
-
-- Elastic Net Regression
-- Cross Validation
-- Hyperparameter Tuning
-- Feature Selection
-- Larger real-world regression projects
-
----
-
 ## About This Repository
 
 This repository is part of my **Machine Learning learning journey**, where I implement machine learning algorithms using **Python** and **Scikit-learn**, solve practical problems, and build projects to strengthen both my theoretical understanding and coding skills.
