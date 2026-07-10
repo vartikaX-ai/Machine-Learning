@@ -11,12 +11,14 @@ The objective of this repository is to understand how different non-linear regre
 ## Algorithms Covered
 
 - Polynomial Regression
+- Decision Tree Regression
 
 ---
 
 ## Topics Covered
 
 - Polynomial Regression
+- Decision Tree Regression
 - Polynomial Features
 - Feature Engineering
 - One-Hot Encoding
@@ -24,6 +26,8 @@ The objective of this repository is to understand how different non-linear regre
 - Correlation Analysis
 - Outlier Detection
 - Train-Test Split
+- Decision Tree Visualization
+- Feature Importance
 - Model Training
 - Prediction
 - Model Evaluation
@@ -68,15 +72,46 @@ The models are evaluated using:
 
 ---
 
-## Key Learning
+### 2. Medical Insurance Cost Prediction using Decision Tree Regression
+
+**Objective**
+
+- Predict medical insurance charges using Decision Tree Regression.
+
+**Dataset**
+
+- medical_insurance.csv
+
+**Concepts Practiced**
+
+- One-Hot Encoding
+- Correlation Analysis
+- Decision Tree Regression
+- Feature Importance
+- Decision Tree Visualization
+- Model Evaluation
+
+---
+
+## Key Learnings
+
+### Polynomial Regression
 
 During experimentation, Polynomial Regression did not outperform Linear Regression on the Car Price dataset.
 
 Generating polynomial and interaction features significantly increased the number of input features, resulting in overfitting and poorer generalization.
 
-This project demonstrates an important machine learning principle:
+**Key Takeaway**
 
-> **A more complex model does not always produce better results. Choosing the appropriate model depends on the characteristics of the dataset.**
+> A more complex model does not always produce better results. Choosing the appropriate model depends on the characteristics of the dataset.
+
+---
+
+### Decision Tree Regression
+
+Decision Tree Regression successfully captured non-linear relationships without requiring feature scaling.
+
+This project also demonstrated how feature importance can be used to identify the most influential variables affecting the prediction.
 
 ---
 
@@ -86,10 +121,12 @@ This project demonstrates an important machine learning principle:
 Non-Linear-Regression/
 │
 ├── datasets/
-│   └── CarPrice_Assignment.csv
+│   ├── CarPrice_Assignment.csv
+│   └── medical_insurance.csv
 │
 ├── projects/
-│   └── Car_Price_Prediction.py
+│   ├── Car_Price_Prediction.py
+│   └── Medical_Insurance_Cost_Prediction_Decision_Tree.py
 │
 ├── README.md
 └── requirements.txt
@@ -132,18 +169,20 @@ pip install -r requirements.txt
 
 ## Learning Outcomes
 
-Through this project, I learned:
+Through these implementations, I learned:
 
-- When to use Polynomial Regression
+- When to use Non-Linear Regression algorithms
 - Creating Polynomial Features
+- Decision Tree Regression
 - Feature Engineering
 - One-Hot Encoding
-- Feature Scaling
 - Data Preprocessing
 - Correlation Analysis
 - Detecting Outliers
+- Decision Tree Visualization
+- Feature Importance
 - Training Regression Models
-- Comparing Linear and Polynomial Regression
+- Comparing Regression Models
 - Evaluating Regression Models using multiple metrics
 - Understanding overfitting caused by high-dimensional feature expansion
 - Selecting the appropriate model based on the dataset
