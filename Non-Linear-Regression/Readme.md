@@ -4,7 +4,7 @@
 
 This repository contains my implementations and practical projects on **Non-Linear Regression** algorithms using **Python** and **Scikit-learn**.
 
-The objective of this repository is to understand how different non-linear regression algorithms model complex relationships between features and target variables through practical implementation, experimentation, and model evaluation.
+The objective of this repository is to understand how different non-linear regression algorithms model complex relationships between features and target variables through practical implementation, experimentation, model comparison, hyperparameter tuning, and evaluation.
 
 ---
 
@@ -12,6 +12,7 @@ The objective of this repository is to understand how different non-linear regre
 
 - Polynomial Regression
 - Decision Tree Regression
+- Random Forest Regression
 
 ---
 
@@ -19,6 +20,7 @@ The objective of this repository is to understand how different non-linear regre
 
 - Polynomial Regression
 - Decision Tree Regression
+- Random Forest Regression
 - Polynomial Features
 - Feature Engineering
 - One-Hot Encoding
@@ -28,6 +30,7 @@ The objective of this repository is to understand how different non-linear regre
 - Train-Test Split
 - Decision Tree Visualization
 - Feature Importance
+- Hyperparameter Tuning
 - Model Training
 - Prediction
 - Model Evaluation
@@ -87,8 +90,31 @@ The models are evaluated using:
 - One-Hot Encoding
 - Correlation Analysis
 - Decision Tree Regression
-- Feature Importance
 - Decision Tree Visualization
+- Feature Importance
+- Model Evaluation
+
+---
+
+### 3. Diamond Price Prediction using Random Forest Regression
+
+**Objective**
+
+- Predict diamond prices using Random Forest Regression.
+- Analyze feature importance.
+- Tune model hyperparameters for better performance.
+
+**Dataset**
+
+- Diamonds Prices2022.csv
+
+**Concepts Practiced**
+
+- One-Hot Encoding
+- Correlation Analysis
+- Random Forest Regression
+- Feature Importance
+- Hyperparameter Tuning (`n_estimators`, `max_depth`)
 - Model Evaluation
 
 ---
@@ -111,7 +137,19 @@ Generating polynomial and interaction features significantly increased the numbe
 
 Decision Tree Regression successfully captured non-linear relationships without requiring feature scaling.
 
-This project also demonstrated how feature importance can be used to identify the most influential variables affecting the prediction.
+This project demonstrated how feature importance can be used to identify the most influential variables affecting predictions.
+
+---
+
+### Random Forest Regression
+
+Random Forest Regression achieved excellent predictive performance by combining the predictions of multiple Decision Trees.
+
+Different values of **`n_estimators`** and **`max_depth`** were tested to understand their impact on model performance.
+
+**Key Takeaway**
+
+> Ensemble learning improves prediction accuracy and reduces overfitting compared to using a single Decision Tree.
 
 ---
 
@@ -122,11 +160,13 @@ Non-Linear-Regression/
 │
 ├── datasets/
 │   ├── CarPrice_Assignment.csv
-│   └── medical_insurance.csv
+│   ├── medical_insurance.csv
+│   └── Diamonds Prices2022.csv
 │
 ├── projects/
 │   ├── Car_Price_Prediction.py
-│   └── Medical_Insurance_Cost_Prediction_Decision_Tree.py
+│   ├── Medical_Insurance_Cost_Prediction_Decision_Tree.py
+│   └── Diamond_Price_RandomForest.py
 │
 ├── README.md
 └── requirements.txt
@@ -174,6 +214,9 @@ Through these implementations, I learned:
 - When to use Non-Linear Regression algorithms
 - Creating Polynomial Features
 - Decision Tree Regression
+- Random Forest Regression
+- Ensemble Learning
+- Hyperparameter Tuning
 - Feature Engineering
 - One-Hot Encoding
 - Data Preprocessing
@@ -185,6 +228,7 @@ Through these implementations, I learned:
 - Comparing Regression Models
 - Evaluating Regression Models using multiple metrics
 - Understanding overfitting caused by high-dimensional feature expansion
+- Improving model performance using ensemble methods
 - Selecting the appropriate model based on the dataset
 
 ---
