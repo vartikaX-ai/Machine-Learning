@@ -13,6 +13,7 @@ The objective of this repository is to understand how different non-linear regre
 - Polynomial Regression
 - Decision Tree Regression
 - Random Forest Regression
+- K-Nearest Neighbors (KNN) Regression
 
 ---
 
@@ -21,6 +22,7 @@ The objective of this repository is to understand how different non-linear regre
 - Polynomial Regression
 - Decision Tree Regression
 - Random Forest Regression
+- K-Nearest Neighbors (KNN) Regression
 - Polynomial Features
 - Feature Engineering
 - One-Hot Encoding
@@ -30,6 +32,7 @@ The objective of this repository is to understand how different non-linear regre
 - Train-Test Split
 - Decision Tree Visualization
 - Feature Importance
+- Distance Metrics (Euclidean & Manhattan)
 - Hyperparameter Tuning
 - Model Training
 - Prediction
@@ -119,6 +122,31 @@ The models are evaluated using:
 
 ---
 
+### 4. Fish Weight Prediction using KNN Regression
+
+**Objective**
+
+- Predict fish weight using K-Nearest Neighbors Regression.
+- Compare different values of **K** and distance metrics.
+- Identify the best-performing model configuration.
+
+**Dataset**
+
+- Fish_dataset.csv
+
+**Concepts Practiced**
+
+- One-Hot Encoding
+- Feature Scaling
+- Correlation Analysis
+- KNN Regression
+- Distance Metrics (Euclidean & Manhattan)
+- Hyperparameter Tuning (`n_neighbors`)
+- Model Evaluation
+- Model Comparison
+
+---
+
 ## Key Learnings
 
 ### Polynomial Regression
@@ -153,6 +181,20 @@ Different values of **`n_estimators`** and **`max_depth`** were tested to unders
 
 ---
 
+### K-Nearest Neighbors (KNN) Regression
+
+KNN Regression predicts continuous values by averaging the target values of the **K nearest neighbors**.
+
+Different values of **`n_neighbors`** and different **distance metrics (Euclidean and Manhattan)** were tested to identify the best-performing model.
+
+Feature scaling was essential because KNN is a distance-based algorithm.
+
+**Key Takeaway**
+
+> The choice of **K**, distance metric, and proper feature scaling significantly impacts the performance of KNN Regression.
+
+---
+
 ## Repository Structure
 
 ```text
@@ -161,12 +203,14 @@ Non-Linear-Regression/
 ├── datasets/
 │   ├── CarPrice_Assignment.csv
 │   ├── medical_insurance.csv
-│   └── Diamonds Prices2022.csv
+│   ├── Diamonds Prices2022.csv
+│   └── Fish_dataset.csv
 │
 ├── projects/
 │   ├── Car_Price_Prediction.py
 │   ├── Medical_Insurance_Cost_Prediction_Decision_Tree.py
-│   └── Diamond_Price_RandomForest.py
+│   ├── Diamond_Price_RandomForest.py
+│   └── Fish_Weight_Prediction_KNN.py
 │
 ├── README.md
 └── requirements.txt
@@ -215,11 +259,15 @@ Through these implementations, I learned:
 - Creating Polynomial Features
 - Decision Tree Regression
 - Random Forest Regression
+- K-Nearest Neighbors (KNN) Regression
 - Ensemble Learning
 - Hyperparameter Tuning
+- Distance-Based Learning
+- Distance Metrics (Euclidean & Manhattan)
 - Feature Engineering
 - One-Hot Encoding
 - Data Preprocessing
+- Feature Scaling
 - Correlation Analysis
 - Detecting Outliers
 - Decision Tree Visualization
