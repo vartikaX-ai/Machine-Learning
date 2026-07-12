@@ -14,6 +14,7 @@ The objective of this repository is to understand how different non-linear regre
 - Decision Tree Regression
 - Random Forest Regression
 - K-Nearest Neighbors (KNN) Regression
+- Support Vector Regression (SVR)
 
 ---
 
@@ -23,16 +24,19 @@ The objective of this repository is to understand how different non-linear regre
 - Decision Tree Regression
 - Random Forest Regression
 - K-Nearest Neighbors (KNN) Regression
+- Support Vector Regression (SVR)
 - Polynomial Features
 - Feature Engineering
 - One-Hot Encoding
 - Feature Scaling
+- Target Variable Scaling
 - Correlation Analysis
 - Outlier Detection
 - Train-Test Split
 - Decision Tree Visualization
 - Feature Importance
 - Distance Metrics (Euclidean & Manhattan)
+- Kernel Functions (Linear, Polynomial, RBF)
 - Hyperparameter Tuning
 - Model Training
 - Prediction
@@ -147,6 +151,30 @@ The models are evaluated using:
 
 ---
 
+### 5. Concrete Compressive Strength Prediction using Support Vector Regression
+
+**Objective**
+
+- Predict concrete compressive strength using Support Vector Regression.
+- Compare different kernel functions and tune SVR hyperparameters to improve performance.
+
+**Dataset**
+
+- concrete_data.csv
+
+**Concepts Practiced**
+
+- Feature Scaling
+- Target Variable Scaling
+- Correlation Analysis
+- Support Vector Regression (SVR)
+- Kernel Functions (Linear, RBF, Polynomial)
+- Hyperparameter Tuning (`C`, `epsilon`)
+- Model Evaluation
+- Model Comparison
+
+---
+
 ## Key Learnings
 
 ### Polynomial Regression
@@ -195,6 +223,20 @@ Feature scaling was essential because KNN is a distance-based algorithm.
 
 ---
 
+### Support Vector Regression (SVR)
+
+Support Vector Regression predicts continuous values by finding a function that fits the data while allowing a small prediction error inside an **ε-tube**.
+
+Different **kernel functions** and values of **`C`** and **`epsilon`** were tested to analyze their effect on model performance.
+
+Both feature scaling and target variable scaling were applied to improve training stability and prediction accuracy.
+
+**Key Takeaway**
+
+> The performance of SVR depends heavily on selecting an appropriate kernel and tuning hyperparameters such as **C** and **epsilon**, while proper feature scaling is essential for achieving good results.
+
+---
+
 ## Repository Structure
 
 ```text
@@ -204,13 +246,15 @@ Non-Linear-Regression/
 │   ├── CarPrice_Assignment.csv
 │   ├── medical_insurance.csv
 │   ├── Diamonds Prices2022.csv
-│   └── Fish_dataset.csv
+│   ├── Fish_dataset.csv
+│   └── concrete_data.csv
 │
 ├── projects/
 │   ├── Car_Price_Prediction.py
 │   ├── Medical_Insurance_Cost_Prediction_Decision_Tree.py
 │   ├── Diamond_Price_RandomForest.py
-│   └── Fish_Weight_Prediction_KNN.py
+│   ├── Fish_Weight_Prediction_KNN.py
+│   └── concrete_data_SVR.py
 │
 ├── README.md
 └── requirements.txt
@@ -260,14 +304,18 @@ Through these implementations, I learned:
 - Decision Tree Regression
 - Random Forest Regression
 - K-Nearest Neighbors (KNN) Regression
+- Support Vector Regression (SVR)
 - Ensemble Learning
-- Hyperparameter Tuning
 - Distance-Based Learning
+- Kernel-Based Learning
+- Hyperparameter Tuning
 - Distance Metrics (Euclidean & Manhattan)
+- Kernel Functions (Linear, Polynomial, RBF)
 - Feature Engineering
 - One-Hot Encoding
 - Data Preprocessing
 - Feature Scaling
+- Target Variable Scaling
 - Correlation Analysis
 - Detecting Outliers
 - Decision Tree Visualization
