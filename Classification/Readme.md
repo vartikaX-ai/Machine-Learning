@@ -4,22 +4,28 @@
 
 This repository contains my implementations and practical projects on **Classification** algorithms using **Python** and **Scikit-learn**.
 
-The objective of this repository is to understand the complete workflow of classification models, including data preprocessing, feature engineering, model training, prediction, probability estimation, threshold tuning, evaluation, and applying classification algorithms to real-world datasets.
+The objective of this repository is to understand the complete workflow of classification models, including data preprocessing, feature engineering, model training, prediction, probability estimation, threshold tuning, tree-based learning, model evaluation, and applying classification algorithms to real-world datasets.
 
 ---
 
 ## Algorithms Covered
 
 - Logistic Regression
+- Decision Tree Classifier
 
 ---
 
 ## Topics Covered
 
+### Classification Fundamentals
+
 - Introduction to Classification
-- Logistic Regression
 - Binary Classification
 - Multiclass Classification
+
+### Logistic Regression
+
+- Logistic Regression
 - Sigmoid Function
 - Decision Boundary
 - Log Loss
@@ -35,9 +41,23 @@ The objective of this repository is to understand the complete workflow of class
 - One-vs-Rest (OVR)
 - Multinomial Logistic Regression
 - Probability Prediction (`predict_proba()`)
-- Data Preprocessing
+
+### Decision Tree
+
+- Decision Tree Classifier
+- Gini Impurity
+- Entropy
+- Information Gain
+- Decision Tree Visualization
+- Tree Depth
+- Feature Importance
+
+### Data Preprocessing
+
+- Data Cleaning
 - Handling Missing Values
 - One-Hot Encoding
+- Label Encoding
 - Feature Scaling (StandardScaler)
 - Train-Test Split
 - Model Training
@@ -59,18 +79,19 @@ The models are evaluated using:
 - Classification Report
 - ROC Curve
 - AUC Score
+- Feature Importance
 
 ---
 
-## Projects
+# Projects
 
-### 1. Titanic Survival Prediction
+## 1. Titanic Survival Prediction (Logistic Regression)
 
-**Objective**
+### Objective
 
 - Predict whether a passenger survived the Titanic disaster using Logistic Regression.
 
-**Features Used**
+### Features Used
 
 - Passenger Class
 - Sex
@@ -81,7 +102,7 @@ The models are evaluated using:
 - Embarked
 - and other passenger-related features.
 
-**Concepts Practiced**
+### Concepts Practiced
 
 - Missing Value Handling
 - One-Hot Encoding
@@ -98,16 +119,57 @@ The models are evaluated using:
 
 ---
 
+## 2. Bank Marketing Prediction (Decision Tree)
+
+### Objective
+
+- Predict whether a customer will subscribe to a term deposit using a Decision Tree Classifier.
+
+### Features Used
+
+- Age
+- Job
+- Marital Status
+- Education
+- Account Balance
+- Housing Loan
+- Personal Loan
+- Contact Type
+- Contact Month
+- Campaign Details
+- Previous Campaign Information
+- Previous Campaign Outcome
+
+### Concepts Practiced
+
+- One-Hot Encoding
+- Label Encoding
+- Decision Tree Classification
+- Gini Impurity
+- Entropy
+- Decision Tree Visualization
+- Feature Importance
+- Confusion Matrix
+- Classification Report
+- ROC Curve
+- AUC Score
+- Model Evaluation
+
+---
+
 ## Repository Structure
 
 ```text
 Classification/
 │
 ├── datasets/
-│   └── Titanic-Dataset.csv
+│   ├── Titanic-Dataset.csv
+│   ├── bank_marketing_train.csv
+│   └── bank_marketing_test.csv
 │
 ├── projects/
-│   └── Titanic_data_Logistic.py
+│   ├── Titanic_data_Logistic.py
+│   └── bank_marketing_decision_tree.py
 │
 ├── README.md
 └── requirements.txt
@@ -154,22 +216,26 @@ pip install -r requirements.txt
 Through these implementations, I learned:
 
 - Understanding binary and multiclass classification.
-- Implementing Logistic Regression using Scikit-learn.
+- Implementing Logistic Regression and Decision Tree Classifiers using Scikit-learn.
 - Understanding Sigmoid Function and Decision Boundary.
+- Understanding Gini Impurity and Entropy.
+- Comparing Gini and Entropy criteria.
 - Working with probability predictions using `predict_proba()`.
 - Applying threshold tuning.
 - Comparing One-vs-Rest (OVR) and Multinomial Logistic Regression.
+- Building and visualizing Decision Trees.
+- Interpreting Feature Importance.
 - Handling missing values and categorical data.
-- Applying One-Hot Encoding.
+- Applying One-Hot Encoding and Label Encoding.
 - Feature Scaling using StandardScaler.
 - Handling class imbalance using sampling techniques.
 - Training classification models.
 - Making predictions.
-- Evaluating model performance using classification metrics.
+- Evaluating model performance using multiple classification metrics.
 - Interpreting ROC Curve and AUC Score.
 
 ---
 
 ## About This Repository
 
-This repository is part of my **Machine Learning learning journey**, where I implement machine learning algorithms using **Python** and **Scikit-learn**, solve practical problems, and build projects to strengthen both my theoretical understanding and coding skills.
+This repository is part of my **Machine Learning learning journey**, where I implement machine learning algorithms using **Python** and **Scikit-learn**, solve practical problems, and build projects to strengthen both my theoretical understanding and practical machine learning skills.
