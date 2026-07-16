@@ -4,7 +4,7 @@
 
 This repository contains my implementations and practical projects on **Classification** algorithms using **Python** and **Scikit-learn**.
 
-The objective of this repository is to understand the complete workflow of classification models, including data preprocessing, feature engineering, model training, prediction, probability estimation, threshold tuning, tree-based learning, model evaluation, and applying classification algorithms to real-world datasets.
+The objective of this repository is to understand the complete workflow of classification models, including data preprocessing, feature engineering, model training, prediction, probability estimation, threshold tuning, tree-based learning, ensemble learning, model evaluation, and applying classification algorithms to real-world datasets.
 
 ---
 
@@ -12,6 +12,7 @@ The objective of this repository is to understand the complete workflow of class
 
 - Logistic Regression
 - Decision Tree Classifier
+- Random Forest Classifier
 
 ---
 
@@ -51,6 +52,18 @@ The objective of this repository is to understand the complete workflow of class
 - Decision Tree Visualization
 - Tree Depth
 - Feature Importance
+
+### Random Forest
+
+- Random Forest Classifier
+- Ensemble Learning
+- Bootstrap Sampling
+- Bagging
+- Majority Voting
+- Number of Trees (`n_estimators`)
+- Tree Depth (`max_depth`)
+- Feature Importance
+- Model Comparison
 
 ### Data Preprocessing
 
@@ -157,6 +170,46 @@ The models are evaluated using:
 
 ---
 
+## 3. Adult Income Prediction (Random Forest)
+
+### Objective
+
+- Predict whether a person's annual income is greater than **$50K** using a Random Forest Classifier.
+
+### Features Used
+
+- Age
+- Workclass
+- Education
+- Marital Status
+- Occupation
+- Relationship
+- Race
+- Gender
+- Capital Gain
+- Capital Loss
+- Hours per Week
+- Native Country
+- Final Weight (`fnlwgt`)
+- and other demographic features.
+
+### Concepts Practiced
+
+- One-Hot Encoding
+- Label Encoding
+- Random Forest Classification
+- Ensemble Learning
+- Bootstrap Sampling
+- Bagging
+- Feature Importance
+- Confusion Matrix
+- Classification Report
+- ROC Curve
+- AUC Score
+- Model Evaluation
+
+---
+
 ## Repository Structure
 
 ```text
@@ -165,11 +218,13 @@ Classification/
 ├── datasets/
 │   ├── Titanic-Dataset.csv
 │   ├── bank_marketing_train.csv
-│   └── bank_marketing_test.csv
+│   ├── bank_marketing_test.csv
+│   └── adult.csv
 │
 ├── projects/
 │   ├── Titanic_data_Logistic.py
-│   └── bank_marketing_decision_tree.py
+│   ├── bank_marketing_decision_tree.py
+│   └── adult_income_random_forest.py
 │
 ├── README.md
 └── requirements.txt
@@ -216,21 +271,23 @@ pip install -r requirements.txt
 Through these implementations, I learned:
 
 - Understanding binary and multiclass classification.
-- Implementing Logistic Regression and Decision Tree Classifiers using Scikit-learn.
+- Implementing Logistic Regression, Decision Tree, and Random Forest classifiers using Scikit-learn.
 - Understanding Sigmoid Function and Decision Boundary.
 - Understanding Gini Impurity and Entropy.
 - Comparing Gini and Entropy criteria.
+- Understanding Ensemble Learning, Bootstrap Sampling, and Bagging.
 - Working with probability predictions using `predict_proba()`.
 - Applying threshold tuning.
 - Comparing One-vs-Rest (OVR) and Multinomial Logistic Regression.
 - Building and visualizing Decision Trees.
-- Interpreting Feature Importance.
+- Understanding Feature Importance.
 - Handling missing values and categorical data.
 - Applying One-Hot Encoding and Label Encoding.
 - Feature Scaling using StandardScaler.
 - Handling class imbalance using sampling techniques.
 - Training classification models.
-- Making predictions.
+- Comparing Decision Tree and Random Forest performance.
+- Making predictions on real-world datasets.
 - Evaluating model performance using multiple classification metrics.
 - Interpreting ROC Curve and AUC Score.
 
