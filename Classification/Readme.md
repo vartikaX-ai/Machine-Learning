@@ -4,7 +4,7 @@
 
 This repository contains my implementations and practical projects on **Classification** algorithms using **Python** and **Scikit-learn**.
 
-The objective of this repository is to understand the complete workflow of classification models, including data preprocessing, feature engineering, model training, prediction, probability estimation, threshold tuning, tree-based learning, ensemble learning, model evaluation, and applying classification algorithms to real-world datasets.
+The objective of this repository is to understand the complete workflow of classification models, including data preprocessing, feature engineering, model training, prediction, probability estimation, threshold tuning, distance-based learning, tree-based learning, ensemble learning, model evaluation, and applying classification algorithms to real-world datasets.
 
 ---
 
@@ -13,6 +13,7 @@ The objective of this repository is to understand the complete workflow of class
 - Logistic Regression
 - Decision Tree Classifier
 - Random Forest Classifier
+- K-Nearest Neighbors (KNN) Classifier
 
 ---
 
@@ -63,6 +64,17 @@ The objective of this repository is to understand the complete workflow of class
 - Number of Trees (`n_estimators`)
 - Tree Depth (`max_depth`)
 - Feature Importance
+- Model Comparison
+
+### K-Nearest Neighbors (KNN)
+
+- K-Nearest Neighbors Classification
+- Distance-Based Learning
+- Euclidean Distance
+- Majority Voting
+- Choosing the Best K (`n_neighbors`)
+- Uniform vs Distance Weights
+- Feature Scaling
 - Model Comparison
 
 ### Data Preprocessing
@@ -210,6 +222,45 @@ The models are evaluated using:
 
 ---
 
+## 4. Heart Disease Prediction (K-Nearest Neighbors)
+
+### Objective
+
+- Predict whether a patient has heart disease using the K-Nearest Neighbors (KNN) algorithm.
+
+### Features Used
+
+- Age
+- Sex
+- Chest Pain Type
+- Resting Blood Pressure
+- Cholesterol
+- Fasting Blood Sugar
+- Resting ECG
+- Maximum Heart Rate
+- Exercise-Induced Angina
+- ST Depression
+- Slope
+- Number of Major Vessels
+- Thalassemia
+- and other medical features.
+
+### Concepts Practiced
+
+- Data Preprocessing
+- Random Under Sampling
+- StandardScaler
+- K-Nearest Neighbors Classification
+- Choosing the Best K (`n_neighbors`)
+- Distance-Based Classification
+- Confusion Matrix
+- Classification Report
+- ROC Curve
+- AUC Score
+- Model Evaluation
+
+---
+
 ## Repository Structure
 
 ```text
@@ -219,12 +270,14 @@ Classification/
 │   ├── Titanic-Dataset.csv
 │   ├── bank_marketing_train.csv
 │   ├── bank_marketing_test.csv
-│   └── adult.csv
+│   ├── adult.csv
+│   └── heart_disease.csv
 │
 ├── projects/
 │   ├── Titanic_data_Logistic.py
 │   ├── bank_marketing_decision_tree.py
-│   └── adult_income_random_forest.py
+│   ├── adult_income_random_forest.py
+│   └── heart_disease_KNN_Classifier.py
 │
 ├── README.md
 └── requirements.txt
@@ -271,11 +324,14 @@ pip install -r requirements.txt
 Through these implementations, I learned:
 
 - Understanding binary and multiclass classification.
-- Implementing Logistic Regression, Decision Tree, and Random Forest classifiers using Scikit-learn.
+- Implementing Logistic Regression, Decision Tree, Random Forest, and K-Nearest Neighbors classifiers using Scikit-learn.
 - Understanding Sigmoid Function and Decision Boundary.
 - Understanding Gini Impurity and Entropy.
 - Comparing Gini and Entropy criteria.
 - Understanding Ensemble Learning, Bootstrap Sampling, and Bagging.
+- Understanding distance-based learning and the K-Nearest Neighbors algorithm.
+- Selecting the optimal value of **K** (`n_neighbors`).
+- Comparing uniform and distance-based voting in KNN.
 - Working with probability predictions using `predict_proba()`.
 - Applying threshold tuning.
 - Comparing One-vs-Rest (OVR) and Multinomial Logistic Regression.
