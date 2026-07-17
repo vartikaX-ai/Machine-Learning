@@ -4,7 +4,7 @@
 
 This repository contains my implementations and practical projects on **Classification** algorithms using **Python** and **Scikit-learn**.
 
-The objective of this repository is to understand the complete workflow of classification models, including data preprocessing, feature engineering, model training, prediction, probability estimation, threshold tuning, distance-based learning, tree-based learning, ensemble learning, model evaluation, and applying classification algorithms to real-world datasets.
+The objective of this repository is to understand the complete workflow of classification models, including data preprocessing, feature engineering, model training, prediction, probability estimation, threshold tuning, distance-based learning, tree-based learning, ensemble learning, margin-based learning, model evaluation, and applying classification algorithms to real-world datasets.
 
 ---
 
@@ -14,6 +14,7 @@ The objective of this repository is to understand the complete workflow of class
 - Decision Tree Classifier
 - Random Forest Classifier
 - K-Nearest Neighbors (KNN) Classifier
+- Support Vector Machine (SVM) Classifier
 
 ---
 
@@ -77,6 +78,23 @@ The objective of this repository is to understand the complete workflow of class
 - Feature Scaling
 - Model Comparison
 
+### Support Vector Machine (SVM)
+
+- Support Vector Machine Classification
+- Hyperplane
+- Support Vectors
+- Margin Maximization
+- Kernel Trick
+- Linear Kernel
+- Polynomial Kernel
+- RBF Kernel
+- Sigmoid Kernel
+- Hyperparameter Tuning (`C`, `gamma`)
+- Probability Prediction (`predict_proba()`)
+- Binary Classification
+- Multiclass Classification
+- Model Comparison
+
 ### Data Preprocessing
 
 - Data Cleaning
@@ -88,7 +106,7 @@ The objective of this repository is to understand the complete workflow of class
 - Model Training
 - Prediction
 - Model Evaluation
-- Class Imbalance Handling
+- Class Imbalance Handling (Random Over Sampling & Random Under Sampling)
 
 ---
 
@@ -252,7 +270,42 @@ The models are evaluated using:
 - StandardScaler
 - K-Nearest Neighbors Classification
 - Choosing the Best K (`n_neighbors`)
-- Distance-Based Classification
+- Distance-Based Learning
+- Uniform vs Distance Weights
+- Confusion Matrix
+- Classification Report
+- ROC Curve
+- AUC Score
+- Model Evaluation
+
+---
+
+## 5. Diabetes Prediction (Support Vector Machine)
+
+### Objective
+
+- Predict whether a patient has diabetes using a Support Vector Machine (SVM) classifier.
+
+### Features Used
+
+- Pregnancies
+- Glucose
+- Blood Pressure
+- Skin Thickness
+- Insulin
+- BMI
+- Diabetes Pedigree Function
+- Age
+
+### Concepts Practiced
+
+- Data Preprocessing
+- Random Over Sampling
+- StandardScaler
+- Support Vector Machine Classification
+- Kernel Selection
+- Hyperparameter Tuning (`C`, `gamma`)
+- Probability Prediction (`predict_proba()`)
 - Confusion Matrix
 - Classification Report
 - ROC Curve
@@ -271,13 +324,15 @@ Classification/
 │   ├── bank_marketing_train.csv
 │   ├── bank_marketing_test.csv
 │   ├── adult.csv
-│   └── heart_disease.csv
+│   ├── heart_disease.csv
+│   └── diabetes.csv
 │
 ├── projects/
 │   ├── Titanic_data_Logistic.py
 │   ├── bank_marketing_decision_tree.py
 │   ├── adult_income_random_forest.py
-│   └── heart_disease_KNN_Classifier.py
+│   ├── heart_disease_KNN_Classifier.py
+│   └── diabetes_SVC.py
 │
 ├── README.md
 └── requirements.txt
@@ -324,7 +379,7 @@ pip install -r requirements.txt
 Through these implementations, I learned:
 
 - Understanding binary and multiclass classification.
-- Implementing Logistic Regression, Decision Tree, Random Forest, and K-Nearest Neighbors classifiers using Scikit-learn.
+- Implementing Logistic Regression, Decision Tree, Random Forest, K-Nearest Neighbors, and Support Vector Machine classifiers using Scikit-learn.
 - Understanding Sigmoid Function and Decision Boundary.
 - Understanding Gini Impurity and Entropy.
 - Comparing Gini and Entropy criteria.
@@ -332,6 +387,11 @@ Through these implementations, I learned:
 - Understanding distance-based learning and the K-Nearest Neighbors algorithm.
 - Selecting the optimal value of **K** (`n_neighbors`).
 - Comparing uniform and distance-based voting in KNN.
+- Understanding Support Vector Machines (SVM), hyperplanes, margins, and support vectors.
+- Understanding the Kernel Trick.
+- Comparing Linear, Polynomial, RBF, and Sigmoid kernels.
+- Selecting appropriate values of `C` and `gamma`.
+- Applying SVM to binary and multiclass classification problems.
 - Working with probability predictions using `predict_proba()`.
 - Applying threshold tuning.
 - Comparing One-vs-Rest (OVR) and Multinomial Logistic Regression.
@@ -340,7 +400,7 @@ Through these implementations, I learned:
 - Handling missing values and categorical data.
 - Applying One-Hot Encoding and Label Encoding.
 - Feature Scaling using StandardScaler.
-- Handling class imbalance using sampling techniques.
+- Handling class imbalance using Random Over Sampling and Random Under Sampling.
 - Training classification models.
 - Comparing Decision Tree and Random Forest performance.
 - Making predictions on real-world datasets.
