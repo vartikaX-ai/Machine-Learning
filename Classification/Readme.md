@@ -4,7 +4,7 @@
 
 This repository contains my implementations and practical projects on **Classification** algorithms using **Python** and **Scikit-learn**.
 
-The objective of this repository is to understand the complete workflow of classification models, including data preprocessing, feature engineering, model training, prediction, probability estimation, threshold tuning, distance-based learning, tree-based learning, ensemble learning, margin-based learning, model evaluation, and applying classification algorithms to real-world datasets.
+The objective of this repository is to understand the complete workflow of classification models, including data preprocessing, feature engineering, model training, prediction, probability estimation, threshold tuning, distance-based learning, tree-based learning, ensemble learning, margin-based learning, probabilistic learning, model evaluation, text classification, and applying classification algorithms to real-world datasets.
 
 ---
 
@@ -15,6 +15,7 @@ The objective of this repository is to understand the complete workflow of class
 - Random Forest Classifier
 - K-Nearest Neighbors (KNN) Classifier
 - Support Vector Machine (SVM) Classifier
+- Naive Bayes Classifier
 
 ---
 
@@ -95,6 +96,26 @@ The objective of this repository is to understand the complete workflow of class
 - Multiclass Classification
 - Model Comparison
 
+### Naive Bayes
+
+- Naive Bayes Classifier
+- Bayes' Theorem
+- Prior Probability
+- Posterior Probability
+- Likelihood
+- Evidence
+- Conditional Probability
+- Independence Assumption
+- Gaussian Naive Bayes
+- Multinomial Naive Bayes
+- Bernoulli Naive Bayes
+- Categorical Naive Bayes
+- Laplace Smoothing
+- CountVectorizer
+- Probability Prediction (`predict_proba()`)
+- Text Classification
+- Model Comparison
+
 ### Data Preprocessing
 
 - Data Cleaning
@@ -148,7 +169,7 @@ The models are evaluated using:
 ### Concepts Practiced
 
 - Missing Value Handling
-- One-Hot Encoding
+- One-HHot Encoding
 - Feature Scaling
 - Logistic Regression
 - Binary Classification
@@ -314,6 +335,35 @@ The models are evaluated using:
 
 ---
 
+## 6. SMS Spam Detection (Multinomial Naive Bayes)
+
+### Objective
+
+- Classify SMS messages as **Spam** or **Ham** using the Multinomial Naive Bayes algorithm.
+
+### Features Used
+
+- SMS Message Text
+
+### Concepts Practiced
+
+- Label Encoding
+- Text Vectorization
+- CountVectorizer
+- Multinomial Naive Bayes
+- Bayes' Theorem
+- Prior Probability
+- Posterior Probability
+- Conditional Probability
+- Probability Prediction (`predict_proba()`)
+- Confusion Matrix
+- Classification Report
+- ROC Curve
+- AUC Score
+- Model Evaluation
+
+---
+
 ## Repository Structure
 
 ```text
@@ -325,14 +375,16 @@ Classification/
 │   ├── bank_marketing_test.csv
 │   ├── adult.csv
 │   ├── heart_disease.csv
-│   └── diabetes.csv
+│   ├── diabetes.csv
+│   └── spam.csv
 │
 ├── projects/
 │   ├── Titanic_data_Logistic.py
 │   ├── bank_marketing_decision_tree.py
 │   ├── adult_income_random_forest.py
 │   ├── heart_disease_KNN_Classifier.py
-│   └── diabetes_SVC.py
+│   ├── diabetes_SVC.py
+│   └──Spam_Detection_Naive_Bayes.py
 │
 ├── README.md
 └── requirements.txt
@@ -379,7 +431,7 @@ pip install -r requirements.txt
 Through these implementations, I learned:
 
 - Understanding binary and multiclass classification.
-- Implementing Logistic Regression, Decision Tree, Random Forest, K-Nearest Neighbors, and Support Vector Machine classifiers using Scikit-learn.
+- Implementing Logistic Regression, Decision Tree, Random Forest, K-Nearest Neighbors, Support Vector Machine, and Naive Bayes classifiers using Scikit-learn.
 - Understanding Sigmoid Function and Decision Boundary.
 - Understanding Gini Impurity and Entropy.
 - Comparing Gini and Entropy criteria.
@@ -392,6 +444,13 @@ Through these implementations, I learned:
 - Comparing Linear, Polynomial, RBF, and Sigmoid kernels.
 - Selecting appropriate values of `C` and `gamma`.
 - Applying SVM to binary and multiclass classification problems.
+- Understanding Bayes' Theorem and Conditional Probability.
+- Understanding Prior, Likelihood, Evidence, and Posterior Probability.
+- Understanding the Naive Independence Assumption.
+- Applying Gaussian, Multinomial, Bernoulli, and Categorical Naive Bayes algorithms.
+- Understanding Laplace Smoothing.
+- Converting text into numerical features using CountVectorizer.
+- Building an SMS Spam Detection model using Multinomial Naive Bayes.
 - Working with probability predictions using `predict_proba()`.
 - Applying threshold tuning.
 - Comparing One-vs-Rest (OVR) and Multinomial Logistic Regression.
