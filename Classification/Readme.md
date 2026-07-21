@@ -4,7 +4,7 @@
 
 This repository contains my implementations and practical projects on **Classification** algorithms using **Python** and **Scikit-learn**.
 
-The objective of this repository is to understand the complete workflow of classification models, including data preprocessing, feature engineering, model training, prediction, probability estimation, threshold tuning, distance-based learning, tree-based learning, ensemble learning, margin-based learning, probabilistic learning, model evaluation, text classification, and applying classification algorithms to real-world datasets.
+The objective of this repository is to understand the complete workflow of classification models, including data preprocessing, feature engineering, model training, prediction, probability estimation, threshold tuning, distance-based learning, tree-based learning, ensemble learning, margin-based learning, probabilistic learning, model evaluation, text classification,supervised dimensionality reduction and applying classification algorithms to real-world datasets.
 
 ---
 
@@ -16,6 +16,7 @@ The objective of this repository is to understand the complete workflow of class
 - K-Nearest Neighbors (KNN) Classifier
 - Support Vector Machine (SVM) Classifier
 - Naive Bayes Classifier
+- Linear Discriminant Analysis (LDA)
 
 ---
 
@@ -116,6 +117,22 @@ The objective of this repository is to understand the complete workflow of class
 - Text Classification
 - Model Comparison
 
+### Linear Discriminant Analysis (LDA)
+
+- Introduction to Linear Discriminant Analysis
+- Supervised Dimensionality Reduction
+- Class Separability
+- Within-Class Scatter Matrix
+- Between-Class Scatter Matrix
+- Class Mean Vectors
+- Eigenvalues & Eigenvectors
+- Linear Discriminants
+- Explained Variance Ratio
+- Feature Transformation
+- Binary Classification
+- Multiclass Classification
+- Model Comparison
+
 ### Data Preprocessing
 
 - Data Cleaning
@@ -169,7 +186,7 @@ The models are evaluated using:
 ### Concepts Practiced
 
 - Missing Value Handling
-- One-HHot Encoding
+- One-Hot Encoding
 - Feature Scaling
 - Logistic Regression
 - Binary Classification
@@ -362,11 +379,37 @@ The models are evaluated using:
 - AUC Score
 - Model Evaluation
 
+## 7. Iris Flower Classification using Linear Discriminant Analysis (LDA)
+
+### Objective
+
+- Reduce the dimensionality of the Iris dataset using **Linear Discriminant Analysis (LDA)** and compare the performance of a **Support Vector Machine (SVM)** classifier before and after dimensionality reduction.
+
+### Features Used
+
+- Sepal Length
+- Sepal Width
+- Petal Length
+- Petal Width
+
+### Concepts Practiced
+
+- StandardScaler
+- Linear Discriminant Analysis (LDA)
+- Supervised Dimensionality Reduction
+- Explained Variance Ratio
+- Feature Transformation
+- Support Vector Machine (SVM)
+- Multiclass Classification
+- Model Comparison (Before vs After LDA)
+- Accuracy Score
+- Confusion Matrix
+- Classification Report
+  
 ---
 
 ## Repository Structure
 
-```text
 Classification/
 │
 ├── datasets/
@@ -384,11 +427,11 @@ Classification/
 │   ├── adult_income_random_forest.py
 │   ├── heart_disease_KNN_Classifier.py
 │   ├── diabetes_SVC.py
-│   └──Spam_Detection_Naive_Bayes.py
+│   ├── Spam_Detection_Naive_Bayes.py
+│   └── Iris_LDA.py
 │
 ├── README.md
 └── requirements.txt
-```
 
 ---
 
@@ -465,6 +508,13 @@ Through these implementations, I learned:
 - Making predictions on real-world datasets.
 - Evaluating model performance using multiple classification metrics.
 - Interpreting ROC Curve and AUC Score.
+- Understanding Linear Discriminant Analysis (LDA).
+- Performing supervised dimensionality reduction.
+- Understanding Within-Class and Between-Class Scatter Matrices.
+- Understanding class separability.
+- Applying LDA before classification models.
+- Comparing classifier performance before and after LDA.
+- Interpreting the Explained Variance Ratio.
 
 ---
 
