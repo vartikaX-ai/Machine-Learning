@@ -22,8 +22,8 @@ encoded_df = pd.DataFrame(oe.fit_transform(df[["Sex","Embarked"]]),columns=oe.ge
 df = df.drop(["PassengerId","Name","Sex","Ticket","Cabin","Embarked"],axis=1)
 new_df = pd.concat([encoded_df,df],axis=1)
 
-X = df.drop("Survived",axis=1)
-y = df["Survived"]
+X = new_df.drop("Survived",axis=1)
+y = new_df["Survived"]
 
 X_train,X_test,y_train,y_test = train_test_split(
     X,y,test_size=0.2,random_state=42
