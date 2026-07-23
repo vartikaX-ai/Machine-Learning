@@ -1,6 +1,6 @@
 # Clustering
 
-## About this Repository
+# About this Repository
 
 This repository contains my implementations and practical projects on **Clustering** algorithms using **Python** and **Scikit-learn**.
 
