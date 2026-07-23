@@ -87,7 +87,7 @@ Clustering/
 │   └── Mall_Customers.csv
 │
 ├── projects/
-│   └── mall_customer_segmentation.py
+│   └── Mall_Customer_KMeans.py
 ├── README.md
 └── requirements.txt
 ```
