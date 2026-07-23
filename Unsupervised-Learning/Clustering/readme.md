@@ -4,9 +4,9 @@
 
 This repository contains my implementations and practical projects on **Clustering** algorithms using **Python** and **Scikit-learn**.
 
-The objective of this repository is to understand the complete workflow of clustering algorithms, including **data preprocessing, feature scaling, cluster formation, optimal cluster selection, cluster evaluation, visualization, and applying clustering techniques to real-world datasets.**
----
+The objective of this repository is to understand the complete workflow of clustering algorithms, from data preprocessing and feature scaling to cluster evaluation and visualization.
 
+---
 # Algorithms Covered
 
 - K-Means Clustering
