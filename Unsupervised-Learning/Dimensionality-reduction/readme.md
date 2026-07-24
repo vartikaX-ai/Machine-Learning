@@ -110,7 +110,7 @@ After completing this project, you will understand:
 PCA/
 │
 ├── projects/
-│   └── Breast_Cancer_PCA_Logistic_Regression.py
+│   └── Breast_Cancer_PCA_Logistic.py
 │
 ├── README.md
 └── requirements.txt
